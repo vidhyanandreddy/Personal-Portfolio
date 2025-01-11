@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ad71ce204f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo"><i class="fa-solid fa-code" style="color: rgb(12, 200, 12);"></i> Developer</div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#achivement">Achivements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>FullStack Developer</p>
+          <h1>
+            Hi,I'm <span>Vidhyanand Reddy</span><br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about section------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="photo-3.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Aspiring Java Full Stack Developer | CSE Student <br>
+            Hello! I'm Vidhyanand Reddy, a Computer Science student at PVKK Institute of Technology, Anantapur, with a passion for technology and innovation. Currently, I'm honing my skills in Java Full Stack Development through AccioJob's Placement Assurance Program.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Frontend Skills</span><br />Designing web/app interface</li>
+                <li><span>Web Developement</span><br />Web App Developement</li>
+                <li>
+                  <span>App Developement</span><br />Building Android/ios Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2008 - 2020</span><br />Deepthi [E.M] High School <br> Percentage : 75%</li>
+                <li><span>2020 - 2022</span><br />LRG Naidu Junior Collage <br> Percentage : 79.7%</li>
+                <li><span>2022 - 2026</span><br />PVKK Institute of Technology <br> Percentage : 80%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------skills------------- -->
+    <div id="skill">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JavaScript</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-bootstrap"></i>
+            <h2>Bootstrap</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------portfolio-------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="project-1.jpg" />
+            <div class="layer">
+              <h3>CSE Learning Hub</h3>
+              <p>It is a Learning platform for CSE students with all resources,notes...</p>
+              <a href="https://vidhyanandreddy.github.io/cselearninghub/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="project-2.jpg" />
+            <div class="layer">
+              <h3>Movie Website</h3>
+              <p>It is a movies website(Telugu,Hindi,Tamil movies....)</p>
+              <a href="https://vidhyanandreddy.github.io/Movies/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="project-3.jpg" />
+            <div class="layer">
+              <h3>B.Tech 2nd year (JNTUA(R20)) Resources</h3>
+              <p>It is a website for CSE students to download materials/classworks...</p>
+              <a href="https://vidhyanandreddy.github.io/CSE-2-1-R20-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+     <!-- -----------------certificates-------------- -->
+    <div id="achivement">
+      <div class="container">
+        <h1 class="sub-title">My Achivements</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="certificate-1.jpg" />
+            <div class="layer">
+              <h3>Data Structure and Algorithms in Java</h3>
+              <h3>Great Learning</h3>
+              <a href="https://www.mygreatlearning.com/certificate/WIGWLMXV"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="certificate-2.jpg" />
+            <div class="layer">
+              <h3>Java for Beginners</h3>
+              <h3>Infosys Springboot</h3>
+              <a href="https://verify.onwingspan.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="certificate-3.jpg" />
+            <div class="layer">
+              <h3>Problem Solving (Basic)</h3>
+              <h3>Hackerrank</h3>
+              <a href="https://www.hackerrank.com/certificates/iframe/6eb5d1a325fb"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+<!-- -----------contact------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vidhyanand067@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 8897083639</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vidhyanandreddy?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></i></a>
+                    <a href="https://www.instagram.com/vidhyanand_28?utm_source=qr&igsh=aGFobzlldnRodDl6"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mulinti-vidhyanand-reddy"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vidhyanandreddy"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="Vidhyanand_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Vidhyanand <i class="fa-solid fa-heart"></i> 2025</p>
+    </div>
+</div>
+<div class="arrow">
+<a class="scroll-link top-link show-link" href="#header" style="text-decoration: none;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>
